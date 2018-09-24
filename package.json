@@ -1,0 +1,57 @@
+{
+  "name": "valory-adaptor-slimjim",
+  "version": "1.0.0",
+  "main": "dist/adaptor-slimjim.js",
+  "license": "MIT",
+  "typings": "dist/adaptor-slimjim.d.ts",
+  "devDependencies": {
+    "@types/node": "^10.10.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.3",
+    "valory-runtime": "^3.7.0",
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^0.14.3",
+    "semantic-release": "^12.4.1"
+  },
+  "dependencies": {
+    "slimjim": "^0.2.4"
+  },
+  "peerDependencies": {
+    "valory-runtime": "^3.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pretest": "npm run build",
+    "build": "tsc",
+    "prepare": "npm run build",
+    "release": "semantic-release",
+    "commitmsg": "commitlint -e $GIT_PARAMS"
+  },
+  "release": {
+    "repositoryUrl": "https://github.com/jfrconley/valory-adaptor-fastify.git",
+    "branch": "master",
+    "verifyConditions": [
+      "@semantic-release/npm",
+      "@semantic-release/github"
+    ],
+    "publish": [
+      "@semantic-release/npm",
+      "@semantic-release/github"
+    ],
+    "success": [],
+    "fail": []
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": "https://github.com/jfrconley/valory-adaptor-fastify.git",
+  "keywords": [
+    "valory",
+    "fastify"
+  ]
+}
