@@ -1606,7 +1606,7 @@ semver-store@^0.3.0:
   version "0.3.0"
   resolved "https://npm.modoapi.com/semver-store/-/semver-store-0.3.0.tgz#ce602ff07df37080ec9f4fb40b29576547befbe9"
 
-"semver@2 >=2.2.1 || 3.x || 4 || 5", "semver@2 || 3 || 4 || 5", semver@^5.3.0, semver@^5.4.1, semver@^5.5.0:
+"semver@2 >=2.2.1 || 3.x || 4 || 5", "semver@2 || 3 || 4 || 5", semver@^5.3.0, semver@^5.4.1, semver@^5.5.0, semver@^5.5.1:
   version "5.5.1"
   resolved "https://npm.modoapi.com/semver/-/semver-5.5.1.tgz#7dfdd8814bdb7cabc7be0fb1d734cfb66c940477"
 
@@ -1636,13 +1636,13 @@ slide@^1.1.3:
   version "1.1.6"
   resolved "https://npm.modoapi.com/slide/-/slide-1.1.6.tgz#56eb027d65b4d2dce6cb2e2d32c4d4afc9e1d707"
 
-slimjim@^0.2.4:
-  version "0.2.4"
-  resolved "https://npm.modoapi.com/slimjim/-/slimjim-0.2.4.tgz#beb4ab9261e35b46d8649bed7bb1a3f2ffa50bc0"
+slimjim@^0.3.0:
+  version "0.3.0"
+  resolved "https://npm.modoapi.com/slimjim/-/slimjim-0.3.0.tgz#6db545db065c209040cb9700dc0f32c7bd98a114"
   dependencies:
     "@types/node" "^10.10.1"
     find-my-way "^1.15.3"
-    turbo-http "^0.3.0"
+    turbo-http-clusterable "^0.3.3"
 
 sonic-boom@^0.6.1:
   version "0.6.1"
@@ -1876,19 +1876,20 @@ tunnel-agent@^0.6.0:
   dependencies:
     safe-buffer "^5.0.1"
 
-turbo-http@^0.3.0:
-  version "0.3.0"
-  resolved "https://npm.modoapi.com/turbo-http/-/turbo-http-0.3.0.tgz#c4673c78e764fca260c197f9f33047f5cb3d3a3e"
+turbo-http-clusterable@^0.3.3:
+  version "0.3.3"
+  resolved "https://npm.modoapi.com/turbo-http-clusterable/-/turbo-http-clusterable-0.3.3.tgz#4fcb49f5f7f1630a230453e6dea87d0f346f8a61"
   dependencies:
     http-parser-js "^0.4.11"
-    turbo-net "^1.4.0"
+    turbo-net-clusterable "^1.4.1"
 
-turbo-net@^1.4.0:
-  version "1.4.0"
-  resolved "https://npm.modoapi.com/turbo-net/-/turbo-net-1.4.0.tgz#c35d71bc2be20455779da1811ae120e65638c117"
+turbo-net-clusterable@^1.4.1:
+  version "1.4.1"
+  resolved "https://npm.modoapi.com/turbo-net-clusterable/-/turbo-net-clusterable-1.4.1.tgz#4600a1b56ae27145a61a5bed6dd5853899cfd9eb"
   dependencies:
     napi-macros "^1.3.0"
     node-gyp-build "^3.3.0"
+    semver "^5.5.1"
     unordered-set "^2.0.0"
 
 tweetnacl@^0.14.3, tweetnacl@~0.14.0:
